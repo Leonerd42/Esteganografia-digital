@@ -52,9 +52,7 @@ void setup() {
                           break; 
                case 3:    p3 = (a) | (b>>7) | (c>>14); 
                           by = p3 | p2 | p1;
-                          //by = (by1>>3);
                           char e = (char)by;
-                          //println(by,"\t",e,"\t",binary(by),by);
                           print(e); 
                           aux = 1; 
                           break; }}    
