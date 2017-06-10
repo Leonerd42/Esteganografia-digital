@@ -1,4 +1,3 @@
-#Esteganografia digital.
 
 Informações do professor. 
 
