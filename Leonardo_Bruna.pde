@@ -5,18 +5,9 @@
   int aux2 = 1, aux3 = 0;  
   int posx, posy; 
  
-void calc(int x, int y){      //Rotina para calcular a posição do pixel no vetor pixels[] através de X e Y encontrados  
-  pos = x + (770*y);  
-}
-
-void leitura(){                          //rotina para a leitura dos bytes RBG
-       a = pixels[i] & 0x000001; 
-       b = pixels[i] & 0x000100; 
-       c = pixels[i] & 0x010000; }        //Mascarando os bytes. 
-
 void setup() {  
   
-     img = loadImage("einstein1.bmp"); 
+     img = loadImage("einstein1.bmp"); //Carrega a imagem 
      image(img,0,0); 
      size(770,700); 
 
@@ -40,7 +31,7 @@ void setup() {
                             else if(aux2 == 3) posx = by;    //Atribuindo o valor de X para posx 
                           aux2++; 
                           if(aux2 > 3) aux = 1;                           
-                          println(binary(by),by); 
+                          println(by); 
                           aux = 1; 
                           break; }}
      
@@ -63,7 +54,17 @@ void setup() {
                           by = p3 | p2 | p1;
                           //by = (by1>>3);
                           char e = (char)by;
-                          println(by,"\t",e,"\t",binary(by),by);                          
+                          //println(by,"\t",e,"\t",binary(by),by);
+                          print(e); 
                           aux = 1; 
                           break; }}    
 }
+
+void calc(int x, int y){      //Rotina para calcular a posição do pixel no vetor pixels[] através de X e Y encontrados  
+  pos = x + (770*y);  
+}
+
+void leitura(){                          //rotina para a leitura dos bytes RBG
+       a = pixels[i] & 0x000001; 
+       b = pixels[i] & 0x000100; 
+       c = pixels[i] & 0x010000; }        //Mascarando os bytes. 
