@@ -1,4 +1,4 @@
-# Esteneografia
+#Esteganografia digital
 Programa para encontrar uma mensagem oculta dentro de uma imagem, de acordo com alguns parametros definidos. 
 
 Informações do professor. 
