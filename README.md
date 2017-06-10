@@ -14,3 +14,6 @@ d) Os 6 pixels seguintes determinam o valor de Y onde começa os pixels codifica
 e) Os últimos três pixels do cabeçalho informam a direção da leitura.
 
 f) A partir do décimo sexto pixel, seguindo a regra (a),  cada três pixels representa um BYTE, cujo dado está codificado em ASCII.
+
+
+  A mensagem escondida é: A senha para acesso ao sistema XY120BX.
