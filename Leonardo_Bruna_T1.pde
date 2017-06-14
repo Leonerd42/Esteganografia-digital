@@ -1,4 +1,4 @@
-  PImage img; //imagem tem 540 por 960 
+  PImage img; //imagem tem 700 por 770
   int i, pos, aux = 1;  // Posição x e y do pixels e i do for, variavel de posição do pixels no array  e variavel auxiliar 
   int a, b, c; //Variaveis para a leitura dos pixels 
   int p1, p2, p3, by; //Parte 1 do byte, Parte 2 e parte 3 e o byte final
